@@ -1,3 +1,0 @@
-Assignment-2 :-
-<h2 style="color: red;">Practical-2: Create a web page showing a basic html structure using Character Entities and span Tag.</h2>
-You have to put the screenshot of your live webpage and its github page link in the google classroom.

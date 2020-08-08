@@ -31,7 +31,7 @@ header{
     width: 100%;
     height: 80px;
     color: white; 
-    margin-bottom: 8px; 
+    margin-bottom: 10px; 
 }
 
 #ban{
@@ -55,7 +55,7 @@ header{
 .sec{
     width:100%;
     height:100px;
-    margin-top:7.5px;
+    margin-top: 7px;
     margin-bottom:8px;
     color:black;
     display: flex;

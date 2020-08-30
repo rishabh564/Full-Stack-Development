@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 64px;
+}
+#header {
+    background-color: grey;
+    height: 64px;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 2;
+}
+.navigation-list {
+    list-style: none;
+    line-height: 64px; 
+    margin-right: 28px;
+    float: right;
+}
+.navigation-listitem {
+    display: inline-block;
+    overflow: hidden;  
+}
+.navigation-listitem a {
+    color:#fff;
+    display:inline-block;
+    font-size:large;
+    margin-left:8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.navigation-listitem a:hover ,.show-button:hover ,.hide-button:hover {
+    color:rgb(189, 228, 243);
+    transition: 0.4s;
+}
+.show-button {
+    float:right;
+    font-size: 2em;
+    margin-right:24px;
+    line-height: 64px;
+    color:white;
+    display:none;
+}
+.hide-button {
+    font-size: 2em;
+    line-height: 64px;
+    color:white;
+    display:none;
+}
+#chk {
+    display:none;
+}
+.heading {
+    color:#fff;
+    font-size: xx-large;
+    position:absolute;
+    top: 112px;
+    left:16px;
+    z-index: 1;
+}
+.banner-image {
+    display:inline-block;
+    padding-top:80px;
+    width:100%;
+    height:88vh;
+}
+#team {
+    text-align: center;
+    padding: 100px 0 0;
+}
+#team img {
+    border-radius: 50%;
+    margin: 50px 2%;
+    width:18%;
+}
+#about {
+    text-align: center;
+    padding-top: 100px;
+}
+#about h1 {
+    margin-bottom: 42px;
+}
+.left-side {
+    background-color: grey;
+    display:inline-block;
+    width: 45%;
+    height:460px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding:0 10px 10px 10px;
+    min-width: 280px;
+}
+.left-side h3 {
+    text-align: left;
+    color:white;
+    margin-bottom: 24px;
+}
+.left-side p {
+    text-align: justify;
+    color:white;
+}
+.right-side {
+    display:inline-block;
+    width:45%;
+    height:470px;
+    min-width: 280px;
+}
+.project {
+    width:100%;
+    height:150px;
+    margin-bottom: 10px;;
+    overflow: hidden; 
+}
+.project h3 {
+    text-align: center;
+}
+.project-1 {
+    background-image: url("../images/p1.jpg");
+}
+.project-2 {
+    background-image: url("../images/p2.jpeg");
+}
+.project-3 {
+    background-image: url("../images/p3.jpg");
+    margin-bottom:0;
+}
+
+#tech {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.card {
+    background-color: white;
+    display: inline-block;
+    margin: 16px;
+    text-align: center;
+    width: 17.5%;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(126, 123, 123, 0.205);
+}
+h3{
+    margin:12px 0 0 0;
+    font-size: medium;
+}
+.card img {
+    border-radius: 8px;
+    width: 100%;
+    height:175px;
+}
+.card p {
+    text-align: justify;
+}
+.card a {
+    background-color: red;
+    border-radius: 8px;
+    color:white;
+    display:block;
+    padding:8px 0;
+    text-align: center;
+    text-decoration: none;
+    width:100%;
+}
+.card a:hover {
+    background-color:blue;
+}
+#contact {
+    text-align: center;
+}
+.footer {
+    background-color: pink;
+    margin-top:16px;
+    padding:16px 0 24px;
+    font-size: smaller;
+}
+
+@media (max-width:1000px) {
+    .card {
+        width: 35%;  
+    }
+}
+
+@media (max-width:800px) {
+    .show-button {
+        display:inline;
+    }
+    .hide-button {
+        display: inline;
+        position: absolute;
+        top:20px;
+        right:40px;
+    }
+    .navigation-list {
+        background-color: #444;
+        right: -120%;
+        float: right;
+        transition: 1s;
+        position: absolute;
+        top:0;
+        width:100%;
+        padding:50px 0;
+    }
+    #chk:checked ~ .navigation-list {
+        right: -28px;
+    }
+    .navigation-listitem {
+        display: block; 
+        text-align: center;
+        height:48px;
+    }
+    .banner-image {
+        height:100%;
+    }
+    #team img {
+        width:36%;
+    }
+    .left-side {
+        width:90%;
+        min-width: 0px;
+        padding:0px 10px 10px 10px;
+        margin-bottom: 10px;
+    }
+    .right-side {
+        width:90%;
+        min-width: 0px;
+    }
+}
+@media (max-width:480px) {
+    #team img {
+        width:72%;
+        margin-bottom: 32px;
+    } 
+    .card {
+        width: 75%;  
+    }
+}
+

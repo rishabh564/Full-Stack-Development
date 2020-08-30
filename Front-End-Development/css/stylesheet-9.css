@@ -119,13 +119,13 @@ html {
     text-align: center;
 }
 .project-1 {
-    background-image: url("../images/p1.jpg");
+    background-image: url("../Images/p1.jpg");
 }
 .project-2 {
-    background-image: url("../images/p2.jpeg");
+    background-image: url("../Images/p2.jpeg");
 }
 .project-3 {
-    background-image: url("../images/p3.jpg");
+    background-image: url("../Images/p3.jpg");
     margin-bottom:0;
 }
 

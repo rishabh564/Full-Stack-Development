@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #d8e2dc;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #212529;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+}
+
+.header h1 {
+    line-height: 70px;
+    color: white;
+    margin-left: 15px;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    background-color: #011627;
+    left: -100%;
+    transition: .8s;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 15px 25px;
+    transition: .5s;
+}
+
+a i {
+    margin-right: 15px;
+}
+
+.sidebar ul li a:hover {
+    border-left: 8px solid white;
+}
+
+.content {
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    padding: 80px 24px 24px;
+    float: right;
+    transition: .8s;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content img {
+    width: 100%;
+    border-radius: 7px;
+    max-width:700px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+    border-top: 2px solid rgba(255, 255, 255, .1);
+    padding: 15px 25px;
+}
+
+i {
+    color: white;
+}
+
+.show-button, .hide-button {
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 15px;
+    left: 40px;
+}
+
+#chk {
+    display: none;
+}
+
+.hide-button {
+    opacity: 0;
+}
+
+#chk:checked~.content {
+    width: 80%;
+}
+
+#chk:checked~.sidebar {
+    left: 0;
+}
+
+#chk:checked~.show-button {
+    opacity: 0;
+}
+
+#chk:checked~.hide-button {
+    opacity: 1;
+}
+
+@media(max-width:700px) {
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 200px;
+    }
+    .header h1 {
+        display: none;
+    }
+}
+

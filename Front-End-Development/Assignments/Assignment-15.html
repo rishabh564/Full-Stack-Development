@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Counter</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: rgb(106, 182, 182);
+                padding: 50px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 3.5em;
+                margin-bottom: 50px;
+                color: rgb(128, 10, 179);
+            }
+            p {
+                display: inline-block;
+                text-align: center;
+                font-size: 3rem;
+                margin: 0 70px;
+                color: rgb(24, 20, 20);
+            }
+            div {
+                text-align: center;
+            }
+            button {
+                background-color: red;
+                line-height: 3rem;
+                width: 3rem;
+                font-size: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Counter</h1>
+        <div>
+            <button id="minus" onclick="decrement()">-</button>
+            <p id="num">0</p>
+            <button id="plus" onclick="increment()">+</button>
+        </div>
+    <script>
+        var number = document.getElementById("num");
+        var btn_minus = document.getElementById("minus");
+        var btn_plus = document.getElementById("plus");
+
+        count = 0;
+        if (count == 0) {
+            btn_minus.disabled = true;
+        }
+        function decrement() {
+            if (count > 0) {
+                number.innerHTML = --count;
+            }
+            if (count > 0) {
+                btn_minus.disabled = false;
+            } else {
+                btn_minus.disabled = true;
+            }
+        }
+        function increment() {
+            number.innerHTML = ++count;
+            if (count > 0) {
+                btn_minus.disabled = false;
+            } else {
+                btn_minus.disabled = true;
+            }
+        }
+    </script>
+    </body>
+</html>

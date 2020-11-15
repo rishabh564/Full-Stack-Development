@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 50px;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
